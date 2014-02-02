@@ -306,7 +306,7 @@
                             <outlet property="delegate" destination="TFQ-5N-VMO" id="ixf-jt-7bR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" id="oS7-tg-T7f" image="gear.png"/>
+                    <tabBarItem key="tabBarItem" id="oS7-tg-T7f" hasTitlePositionAdjustment="0" image="gear.png"/>
                     <connections>
                         <outlet property="txtLastName" destination="h7e-81-7f2" id="name-outlet-h7e-81-7f2"/>
                         <outlet property="txtVoornaam" destination="48P-3M-bLI" id="name-outlet-48P-3M-bLI"/>

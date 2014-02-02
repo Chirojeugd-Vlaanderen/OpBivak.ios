@@ -9,7 +9,7 @@ namespace OpBivak.ios
 	{
 		public SecondViewController (IntPtr handle) : base (handle)
 		{
-			Title = NSBundle.MainBundle.LocalizedString ("SOS", "SOS");
+			//Title = NSBundle.MainBundle.LocalizedString ("SOS", "SOS");
 			TabBarItem.Image = UIImage.FromBundle ("ios7-telephone");
 		}
 

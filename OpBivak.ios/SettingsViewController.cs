@@ -10,7 +10,7 @@ namespace OpBivak.ios
 	{
 		public SettingsViewController (IntPtr handle) : base (handle)
 		{
-			Title = NSBundle.MainBundle.LocalizedString ("Instellingen", "Instellingen");
+			//Title = NSBundle.MainBundle.LocalizedString ("Instellingen", "Instellingen");
 			TabBarItem.Image = UIImage.FromBundle ("gear");
 
 		}
