@@ -19,6 +19,10 @@ namespace OpBivak.ios
 
 		[Outlet]
 		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
+		MonoTouch.UIKit.UITextView txtInfo { get; set; }
+
+		[Outlet]
+		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
 		MonoTouch.UIKit.UITextView txtIntro { get; set; }
 
 		[Action ("btnCallKipdorp_TouchUpInside:")]
@@ -30,6 +34,10 @@ namespace OpBivak.ios
 			if (btnCallKipdorp != null) {
 				btnCallKipdorp.Dispose ();
 				btnCallKipdorp = null;
+			}
+			if (txtInfo != null) {
+				txtInfo.Dispose ();
+				txtInfo = null;
 			}
 			if (txtIntro != null) {
 				txtIntro.Dispose ();

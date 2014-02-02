@@ -8,10 +8,12 @@ namespace OpBivak.ios
 {
 	public partial class FirstViewController : UIViewController
 	{
+
 		public FirstViewController (IntPtr handle) : base (handle)
 		{
 			Title = NSBundle.MainBundle.LocalizedString ("First", "First");
 			TabBarItem.Image = UIImage.FromBundle ("first");
+
 		}
 
 		public override void DidReceiveMemoryWarning ()
@@ -34,6 +36,27 @@ namespace OpBivak.ios
 		public override void ViewWillAppear (bool animated)
 		{
 			base.ViewWillAppear (animated);
+			if ((int)DateTime.Now.DayOfWeek > 5 || DateTime.Now.Hour > 17 || DateTime.Now.Hour < 08) {
+				//weekend OF na 18u OF voor 08u
+				if (DateTime.Today.DayOfYear >= 182 && DateTime.Today.DayOfYear < 244) {
+					txtInfo.BackgroundColor = UIColor.FromRGB (225, 20, 60);
+					//juli en augustus
+					// bel de permanentiegsm
+				} else {
+					//rest van het jaar
+					// niet bereikbaar
+					txtInfo.Text = "Sorry, We zijn momenteel niet bereikbaar. Bel ons de volgende werkdag even terug.";
+					txtInfo.BackgroundColor = UIColor.FromRGB (225, 20, 60);
+				}
+			} else {
+				//kantooruren
+				//bel kipdorp
+				txtInfo.Text = "Als je ons nu belt kom je op het nationaal secretariaat terecht. Daar zullen ze je zo goed en snel mogelijk verderhelpen.";
+			}
+
+
+
+
 		}
 
 		public override void ViewDidAppear (bool animated)

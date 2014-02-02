@@ -54,6 +54,7 @@
                     <connections>
                         <outlet property="btnCallKipdorp" destination="3" id="name-outlet-3"/>
                         <outlet property="txtIntro" destination="6" id="name-outlet-6"/>
+                        <outlet property="txtInfo" destination="7" id="name-outlet-7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
