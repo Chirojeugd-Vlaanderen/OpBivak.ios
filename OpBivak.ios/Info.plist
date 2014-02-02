@@ -21,7 +21,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>CFBundleDisplayName</key>
-	<string>Op Bivzk!</string>
+	<string>Op Bivak!</string>
 	<key>CFBundleIdentifier</key>
 	<string>be.chiro.opbival</string>
 	<key>CFBundleShortVersionString</key>
