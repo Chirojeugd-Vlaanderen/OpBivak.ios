@@ -130,7 +130,7 @@
     <BundleResource Include="Resources\ios7-telephone.png" />
     <BundleResource Include="Resources\logo.png" />
     <BundleResource Include="Resources\logo%402x.png" />
-    <BundleResource Include="settings.bundle\Root.plist" />
+    <BundleResource Include="Settings.bundle\Root.plist" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -145,6 +145,6 @@
     <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="settings.bundle\" />
+    <Folder Include="Settings.bundle\" />
   </ItemGroup>
 </Project>
