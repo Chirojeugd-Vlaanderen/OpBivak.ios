@@ -16,39 +16,46 @@ namespace OpBivak.ios
 		[Outlet]
 		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
 		MonoTouch.UIKit.UIButton btnAntigif { get; set; }
-		[Action ("btnAntigif_TouchUpInside:")]
-		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
-		partial void btnAntigif_TouchUpInside (UIButton sender);
 
 		[Outlet]
 		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
 		MonoTouch.UIKit.UIButton btnApotheek { get; set; }
-		[Action ("btnApotheek_TouchUpInside:")]
-		partial void btnApotheek_TouchUpInside (UIButton sender);
 
 		[Outlet]
 		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
 		MonoTouch.UIKit.UIButton btnDokter { get; set; }
-		[Action ("btnDokter_TouchUpInside:")]
-		partial void btnDokter_TouchUpInside (UIButton sender);
 
 		[Outlet]
 		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
 		MonoTouch.UIKit.UIButton btnHulp { get; set; }
-		[Action ("btnHulp_TouchUpInside:")]
-		partial void btnHulp_TouchUpInside (UIButton sender);
 
 		[Outlet]
 		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
 		MonoTouch.UIKit.UIButton btnPolitie { get; set; }
-		[Action ("btnPolitie_TouchUpInside:")]
-		partial void btnPolitie_TouchUpInside (UIButton sender);
 
 		[Outlet]
 		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
 		MonoTouch.UIKit.UITextView txtSos { get; set; }
 
+		[Action ("btnAntigif_TouchUpInside:")]
+		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
+		partial void btnAntigif_TouchUpInside (UIButton sender);
 
+		[Action ("btnApotheek_TouchUpInside:")]
+		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
+		partial void btnApotheek_TouchUpInside (UIButton sender);
+
+		[Action ("btnDokter_TouchUpInside:")]
+		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
+		partial void btnDokter_TouchUpInside (UIButton sender);
+
+		[Action ("btnHulp_TouchUpInside:")]
+		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
+		partial void btnHulp_TouchUpInside (UIButton sender);
+
+		[Action ("btnPolitie_TouchUpInside:")]
+		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
+		partial void btnPolitie_TouchUpInside (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
