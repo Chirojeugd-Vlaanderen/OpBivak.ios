@@ -11,7 +11,7 @@ namespace OpBivak.ios
 
 		public FirstViewController (IntPtr handle) : base (handle)
 		{
-			Title = NSBundle.MainBundle.LocalizedString ("First", "First");
+			Title = NSBundle.MainBundle.LocalizedString ("Op Bivak!", "Op Bivak!");
 			TabBarItem.Image = UIImage.FromBundle ("first");
 
 		}
