@@ -36,7 +36,7 @@ namespace OpBivak.ios
 		public override void ViewWillAppear (bool animated)
 		{
 			base.ViewWillAppear (animated);
-			if ((int)DateTime.Now.DayOfWeek > 5 || DateTime.Now.Hour > 17 || DateTime.Now.Hour < 08) {
+			if (DateTime.Now.DayOfWeek == DayOfWeek.Sunday || DateTime.Now.DayOfWeek == DayOfWeek.Saturday || DateTime.Now.Hour > 17 || DateTime.Now.Hour < 08) {
 				//weekend OF na 18u OF voor 08u
 				if (DateTime.Today.DayOfYear >= 182 && DateTime.Today.DayOfYear < 244) {
 					txtInfo.BackgroundColor = UIColor.FromRGB (225, 20, 60);
