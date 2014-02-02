@@ -70,7 +70,7 @@ namespace OpBivak.ios
 			Call("101");
 		}
 		public bool Call(string number){
-			var urlToSend = new NSUrl ("tel://" + number);
+			var urlToSend = new NSUrl ("telprompt://" + number);
 			if (UIApplication.SharedApplication.CanOpenUrl (urlToSend)) {
 				UIApplication.SharedApplication.OpenUrl (urlToSend);
 				return true;
