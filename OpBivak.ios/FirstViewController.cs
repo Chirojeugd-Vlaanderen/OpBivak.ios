@@ -49,7 +49,10 @@ namespace OpBivak.ios
 		{
 			base.ViewDidDisappear (animated);
 		}
-
+		partial void btnCallKipdorp_TouchUpInside (UIButton sender){
+			//not yet implemented
+			throw(NotImplementedException);
+		}
 		#endregion
 	}
 }

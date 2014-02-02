@@ -17,6 +17,10 @@ namespace OpBivak.ios
 		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
 		MonoTouch.UIKit.UIButton btnCallKipdorp { get; set; }
 
+		[Action ("btnCallKipdorp_TouchUpInside:")]
+		[GeneratedCodeAttribute ("iOS Designer", "1.0")]
+		partial void btnCallKipdorp_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (btnCallKipdorp != null) {
