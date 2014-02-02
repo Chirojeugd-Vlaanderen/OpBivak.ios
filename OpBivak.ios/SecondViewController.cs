@@ -49,7 +49,42 @@ namespace OpBivak.ios
 		{
 			base.ViewDidDisappear (animated);
 		}
+		partial void btnHulp_TouchUpInside (UIButton sender){
+			Call("112");
+		}
 
+		partial void btnAntigif_TouchUpInside (UIButton sender){
+			Call("+327245245");
+		}
+
+		partial void btnApotheek_TouchUpInside (UIButton sender){
+			Call("+3290010500");
+
+		}
+
+		partial void btnDokter_TouchUpInside (UIButton sender){
+			Call("1733");
+		}
+
+		partial void btnPolitie_TouchUpInside (UIButton sender){
+			Call("101");
+		}
+		public bool Call(string number){
+			var urlToSend = new NSUrl ("tel://" + number);
+			if (UIApplication.SharedApplication.CanOpenUrl (urlToSend)) {
+				UIApplication.SharedApplication.OpenUrl (urlToSend);
+				return true;
+			} else {
+				UIAlertView alert = new UIAlertView ();
+				alert.Title = "Foutje";
+				alert.AddButton ("OK");
+				alert.Message = "Dit toestel heeft heeft geen telefoon functionaliteit. Zoek een telefoon en bel " + number + ".";
+				alert.Show ();
+				return false;
+
+
+			}
+		}
 		#endregion
 	}
 }
