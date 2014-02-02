@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Je naam</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>firstNameKey</string>
+			<key>Title</key>
+			<string>Je voornaam</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>DefaultValue</key>
+			<string>Jan</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>lastNameKey</string>
+			<key>Title</key>
+			<string>Je famillienaam</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>DefaultValue</key>
+			<string>Peeters</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Je Chirogroep</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>stamNummerKey</string>
+			<key>Title</key>
+			<string>Stamnummer</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>DefaultValue</key>
+			<string>NAT/0000</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>chiroGroepKey</string>
+			<key>Title</key>
+			<string>Naam</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>DefaultValue</key>
+			<string>Chirojeugd Vlaanderen</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Gemeente</string>
+			<key>Key</key>
+			<string>groepGemeenteKey</string>
+			<key>DefaultValue</key>
+			<string>Antwerpen</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>
