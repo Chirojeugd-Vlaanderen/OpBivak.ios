@@ -54,7 +54,7 @@ namespace OpBivak.ios
 		}
 
 		partial void btnAntigif_TouchUpInside (UIButton sender){
-			Call("+327245245");
+			Call("+3270245245");
 		}
 
 		partial void btnApotheek_TouchUpInside (UIButton sender){
