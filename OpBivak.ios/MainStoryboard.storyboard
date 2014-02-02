@@ -25,6 +25,26 @@
                                     <action selector="btnCallKipdorp_TouchUpInside:" destination="CZ4-MO-1fc" id="5" eventType="touchUpInside"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6" translatesAutoresizingMaskIntoConstraints="NO" editable="NO">
+                                <rect key="frame" x="20" y="50" width="280" height="97"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <string key="text">Een probleem op bivak? Met deze app kom je terecht op het nationaal secretariaat. In juli en augustus zij we voor ernstige situaties 24/24 bereikbaar.</string>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7" translatesAutoresizingMaskIntoConstraints="NO" editable="YES" selectable="NO">
+                                <rect key="frame" x="20" y="223" width="280" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <constraints>
+                                    <constraint firstItem="7" firstAttribute="height" constant="240" type="user" id="8"/>
+                                </constraints>
+                                <string key="text">Opgelet: Je kan de bivakpermanentie momenteel enke bereiken in dringende gevallen. Spreek een boodschap in op ons antwoorapparaat. Bij dringende gevallen bellen we binnen het kwartier terug. Informatieve en verzekeringsvragen stel je de volgende werkdag.</string>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -33,6 +53,7 @@
                     <tabBarItem key="tabBarItem" title="First" image="first" id="u1e-5L-l1D"/>
                     <connections>
                         <outlet property="btnCallKipdorp" destination="3" id="name-outlet-3"/>
+                        <outlet property="txtIntro" destination="6" id="name-outlet-6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
@@ -109,6 +130,8 @@
         <image name="Icon-60.png" width="120" height="120"/>
         <image name="Icon-Small.png" width="29" height="29"/>
         <image name="Icon-Small-40.png" width="80" height="80"/>
+        <image name="ios7-telephone.png" width="30" height="30"/>
+        <image name="logo.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
