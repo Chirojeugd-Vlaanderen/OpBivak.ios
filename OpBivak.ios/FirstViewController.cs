@@ -74,20 +74,24 @@ namespace OpBivak.ios
 			base.ViewDidDisappear (animated);
 		}
 		partial void btnCallKipdorp_TouchUpInside (UIButton sender){
-			//not yet implemented
+			//set string for call
 			string phone = "+32476588722";
+			bool called;
 			var urlToSend = new NSUrl ("telprompt://" + phone);
 			if (UIApplication.SharedApplication.CanOpenUrl(urlToSend)){
 				UIApplication.SharedApplication.OpenUrl(urlToSend);
+				called = true;
 			} else {
 				UIAlertView alert = new UIAlertView();
 				alert.Title = "Foutje";
 				alert.AddButton("OK");
 				alert.Message = "Dit toestel heeft heeft geen telefoon functionaliteit. Zoek een telefoon en bel " + phone + "voor de bivakpermanentie";
 				alert.Show();
+				called = false;
+
 
 			}
-			// set recipient for call.
+			// set recipient for message.
 			string[] recipient = new string[1] {"+32476588722"};
 			//get name etc from settings
 			//NSUserDefaults.StandardUserDefaults.SetValueForKey("John", "firstNameKey")
@@ -126,7 +130,9 @@ namespace OpBivak.ios
 
 
 			//send the message
-			ShowAndSendSMS(recipient, message);
+			if (called == true){
+				ShowAndSendSMS(recipient, message);
+			}
 		}
 		public bool ShowAndSendSMS(string[] recipients, string body){
 			if (MFMessageComposeViewController.CanSendText) {
