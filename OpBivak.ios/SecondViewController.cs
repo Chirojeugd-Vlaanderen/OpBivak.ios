@@ -9,8 +9,8 @@ namespace OpBivak.ios
 	{
 		public SecondViewController (IntPtr handle) : base (handle)
 		{
-			Title = NSBundle.MainBundle.LocalizedString ("Second", "Second");
-			TabBarItem.Image = UIImage.FromBundle ("second");
+			Title = NSBundle.MainBundle.LocalizedString ("SOS", "SOS");
+			TabBarItem.Image = UIImage.FromBundle ("ios7-telephone");
 		}
 
 		public override void DidReceiveMemoryWarning ()
