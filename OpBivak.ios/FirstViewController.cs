@@ -85,7 +85,7 @@ namespace OpBivak.ios
 				UIAlertView alert = new UIAlertView();
 				alert.Title = "Foutje";
 				alert.AddButton("OK");
-				alert.Message = "Dit toestel heeft heeft geen telefoon functionaliteit. Zoek een telefoon en bel " + phone + "voor de bivakpermanentie";
+				alert.Message = "Dit toestel heeft heeft geen telefoonfunctionaliteit. Zoek een telefoon en bel " + phone + "voor de bivakpermanentie";
 				alert.Show();
 				called = false;
 
@@ -109,6 +109,8 @@ namespace OpBivak.ios
 				message += firstname;
 			}else if (!string.IsNullOrWhiteSpace(lastname)){
 				message += lastname;
+			}else {
+				message += "<anoniem>";
 			}
 			if (!string.IsNullOrWhiteSpace(stamnummer)|| !string.IsNullOrWhiteSpace(groep) || !string.IsNullOrWhiteSpace(gemeente)){
 				message += ", mijn Chirogroep is: " ;
