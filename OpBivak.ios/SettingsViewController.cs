@@ -82,6 +82,7 @@ namespace OpBivak.ios
 			NSUserDefaults.StandardUserDefaults.SetString(txtStamNummer.Text, "stamNummerKey");
 			NSUserDefaults.StandardUserDefaults.SetString(txtGroepNaam.Text, "chiroGroepKey");
 			NSUserDefaults.StandardUserDefaults.SetString(txtGroepGemeente.Text, "groepGemeenteKey");
+			NSUserDefaults.StandardUserDefaults.Synchronize ();
 			//if btnSendSms.
 			//NSUserDefaults.StandardUserDefaults.SetValueForKey((bool)btnSendSms.State, "noSmsKey");
 		}
