@@ -48,7 +48,7 @@ namespace OpBivak.ios
 		{
 			base.ViewWillAppear (animated);
 			// get settings
-
+			NSBundle.MainBundle.PathForResource ("Settings", @"bundle");
 			string firstname = NSUserDefaults.StandardUserDefaults.StringForKey ("firstNameKey");
 			string lastname = NSUserDefaults.StandardUserDefaults.StringForKey("lastNameKey");
 			string stamnummer = NSUserDefaults.StandardUserDefaults.StringForKey("stamNummerKey");

@@ -94,7 +94,9 @@ namespace OpBivak.ios
 			}
 			// set recipient for message.
 			string[] recipient = new string[1] {"+32476588722"};
+
 			//get name etc from settings
+			NSBundle.MainBundle.PathForResource ("Settings", @"bundle");
 			//NSUserDefaults.StandardUserDefaults.SetValueForKey("John", "firstNameKey")
 			string firstname = NSUserDefaults.StandardUserDefaults.StringForKey("firstNameKey");
 			string lastname = NSUserDefaults.StandardUserDefaults.StringForKey("lastNameKey");
