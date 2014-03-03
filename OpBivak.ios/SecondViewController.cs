@@ -78,7 +78,7 @@ namespace OpBivak.ios
 				UIAlertView alert = new UIAlertView ();
 				alert.Title = "Foutje";
 				alert.AddButton ("OK");
-				alert.Message = "Dit toestel heeft heeft geen telefoon functionaliteit. Zoek een telefoon en bel " + number + ".";
+				alert.Message = "Met dit toestel kan je niet telefoneren. Zoek een telefoon en bel " + number + ".";
 				alert.Show ();
 				return false;
 
