@@ -31,5 +31,10 @@ Global
 		Policies = $0
 		$0.VersionControlPolicy = $1
 		$1.inheritsSet = Mono
+		$0.DotNetNamingPolicy = $2
+		$2.DirectoryNamespaceAssociation = None
+		$2.ResourceNamePolicy = FileFormatDefault
+		description = Met de applicatie bereik je de bivakpermanentie van Chirojeugd Vlaandeen
+		version = 1.0
 	EndGlobalSection
 EndGlobal

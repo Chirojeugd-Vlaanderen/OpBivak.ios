@@ -23,11 +23,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Op Bivak!</string>
 	<key>CFBundleIdentifier</key>
-	<string>be.chiro.opbival</string>
-	<key>CFBundleShortVersionString</key>
-	<string>0.1</string>
-	<key>CFBundleVersion</key>
-	<string>0.1</string>
+	<string>be.chiro.opbivak</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
 	<key>CFBundleIconFiles</key>
@@ -39,5 +35,9 @@
 		<string>Icon-Small@2x</string>
 		<string>Icon-Small-40@2x</string>
 	</array>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
 </dict>
 </plist>
