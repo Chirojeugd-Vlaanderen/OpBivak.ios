@@ -48,7 +48,7 @@ namespace OpBivak.ios
 		{
 			base.ViewWillAppear (animated);
 			// get settings
-			NSBundle.MainBundle.PathForResource ("Settings", @"bundle");
+
 			string firstname = NSUserDefaults.StandardUserDefaults.StringForKey ("firstNameKey");
 			string lastname = NSUserDefaults.StandardUserDefaults.StringForKey("lastNameKey");
 			string stamnummer = NSUserDefaults.StandardUserDefaults.StringForKey("stamNummerKey");
@@ -77,12 +77,29 @@ namespace OpBivak.ios
 		}
 
 		public void saveSettings(){
-			NSUserDefaults.StandardUserDefaults.SetString(txtVoornaam.Text, "firstNameKey");
-			NSUserDefaults.StandardUserDefaults.SetString(txtLastName.Text, "lastNameKey");
-			NSUserDefaults.StandardUserDefaults.SetString(txtStamNummer.Text, "stamNummerKey");
-			NSUserDefaults.StandardUserDefaults.SetString(txtGroepNaam.Text, "chiroGroepKey");
-			NSUserDefaults.StandardUserDefaults.SetString(txtGroepGemeente.Text, "groepGemeenteKey");
-			NSUserDefaults.StandardUserDefaults.Synchronize ();
+			NSBundle.MainBundle.PathForResource ("Settings", @"bundle");
+			if (txtVoornaam.Text != null) {
+				NSUserDefaults.StandardUserDefaults.SetString (txtVoornaam.Text, "firstNameKey");
+			}
+			if (txtLastName.Text != null) {
+				NSUserDefaults.StandardUserDefaults.SetString (txtLastName.Text, "lastNameKey");
+			}
+			if (txtStamNummer.Text != null) {
+				NSUserDefaults.StandardUserDefaults.SetString (txtStamNummer.Text, "stamNummerKey");
+			}
+			if (txtGroepNaam.Text != null) {
+				NSUserDefaults.StandardUserDefaults.SetString (txtGroepNaam.Text, "chiroGroepKey");
+			}
+			if (txtGroepGemeente.Text != null) {
+				NSUserDefaults.StandardUserDefaults.SetString (txtGroepGemeente.Text, "groepGemeenteKey");
+			}
+			if (NSUserDefaults.StandardUserDefaults.Synchronize () == true) {
+				Console.WriteLine ("Settings saved");
+
+			} else {
+				Console.WriteLine ("saving failed");
+
+			}
 			//if btnSendSms.
 			//NSUserDefaults.StandardUserDefaults.SetValueForKey((bool)btnSendSms.State, "noSmsKey");
 		}

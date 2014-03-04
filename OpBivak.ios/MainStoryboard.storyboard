@@ -153,11 +153,11 @@
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
-        <!--Table View Controller - Item-->
+        <!--Settings View Controller-->
         <scene sceneID="2pv-Zm-sA7">
             <objects>
-                <tableViewController id="TFQ-5N-VMO" sceneMemberID="viewController" customClass="SettingsViewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Qpw-ID-PjW" allowsSelection="NO">
+                <tableViewController id="TFQ-5N-VMO" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Qpw-ID-PjW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -178,13 +178,15 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="roundedRect" placeholder="Jan" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="48P-3M-bLI" clearsOnBeginEditing="NO">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jan" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="48P-3M-bLI">
                                                     <rect key="frame" x="143" y="7" width="157" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                     <connections>
-                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="50" eventType="valueChanged"/>
+                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" eventType="valueChanged" id="50"/>
+                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="59" eventType="valueChanged"/>
+                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="60" eventType="editingDidEnd"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -197,13 +199,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="roundedRect" placeholder="Peeters" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7e-81-7f2">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Peeters" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7e-81-7f2">
                                                     <rect key="frame" x="143" y="7" width="157" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                     <connections>
-                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="51" eventType="valueChanged"/>
+                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="61" eventType="editingDidEnd"/>
                                                     </connections>
                                                 </textField>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Famillienaam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufw-nW-7Ap">
@@ -234,13 +236,13 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="roundedRect" placeholder="NAT/0000" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUp-ut-vlW">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NAT/0000" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUp-ut-vlW">
                                                     <rect key="frame" x="143" y="7" width="157" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="next"/>
                                                     <connections>
-                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="52" eventType="valueChanged"/>
+                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="62" eventType="editingDidEnd"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -253,13 +255,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="roundedRect" placeholder="Chirojeugd Vlaanderen" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Hj-sR-EfB">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chirojeugd Vlaanderen" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Hj-sR-EfB">
                                                     <rect key="frame" x="143" y="7" width="157" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                     <connections>
-                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="53" eventType="valueChanged"/>
+                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="63" eventType="editingDidEnd"/>
                                                     </connections>
                                                 </textField>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtp-Ml-IdF">
@@ -279,13 +281,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="roundedRect" placeholder="Antwerpen" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUW-mb-DRh">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Antwerpen" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUW-mb-DRh">
                                                     <rect key="frame" x="143" y="7" width="157" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                                                     <connections>
-                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="54" eventType="valueChanged"/>
+                                                        <action selector="txtName_Changed:" destination="TFQ-5N-VMO" id="64" eventType="editingDidEnd"/>
                                                     </connections>
                                                 </textField>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gemeente" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h85-eA-s9s">
@@ -306,14 +308,13 @@
                             <outlet property="delegate" destination="TFQ-5N-VMO" id="ixf-jt-7bR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" id="oS7-tg-T7f" hasTitlePositionAdjustment="0" image="gear.png"/>
+                    <tabBarItem key="tabBarItem" image="gear.png" id="oS7-tg-T7f"/>
                     <connections>
-                        <outlet property="txtLastName" destination="h7e-81-7f2" id="name-outlet-h7e-81-7f2"/>
-                        <outlet property="txtVoornaam" destination="48P-3M-bLI" id="name-outlet-48P-3M-bLI"/>
-                        <outlet property="txtStamNummer" destination="dUp-ut-vlW" id="name-outlet-dUp-ut-vlW"/>
-                        <outlet property="txtGroepNaam" destination="8Hj-sR-EfB" id="name-outlet-8Hj-sR-EfB"/>
                         <outlet property="txtGroepGemeente" destination="DUW-mb-DRh" id="name-outlet-DUW-mb-DRh"/>
-                        <outlet property="btnSendSms" destination="xPn-2O-8Ie" id="name-outlet-xPn-2O-8Ie"/>
+                        <outlet property="txtGroepNaam" destination="8Hj-sR-EfB" id="name-outlet-8Hj-sR-EfB"/>
+                        <outlet property="txtLastName" destination="h7e-81-7f2" id="name-outlet-h7e-81-7f2"/>
+                        <outlet property="txtStamNummer" destination="dUp-ut-vlW" id="name-outlet-dUp-ut-vlW"/>
+                        <outlet property="txtVoornaam" destination="48P-3M-bLI" id="name-outlet-48P-3M-bLI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsO-gn-maG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -342,6 +343,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gear.png" width="30" height="30"/>
         <image name="ios7-telephone.png" width="30" height="30"/>
         <image name="logo.png" width="30" height="30"/>
         <image name="first.png" width="30" height="30"/>
@@ -350,7 +352,6 @@
         <image name="Icon-60.png" width="120" height="120"/>
         <image name="Icon-Small.png" width="29" height="29"/>
         <image name="Icon-Small-40.png" width="80" height="80"/>
-        <image name="gear.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

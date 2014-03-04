@@ -96,9 +96,11 @@ namespace OpBivak.ios
 			string[] recipient = new string[1] {"+32476588722"};
 
 			//get name etc from settings
-			NSBundle.MainBundle.PathForResource ("Settings", @"bundle");
+			var settings = NSUserDefaults.StandardUserDefaults;
+			settings.Synchronize();
+
 			//NSUserDefaults.StandardUserDefaults.SetValueForKey("John", "firstNameKey")
-			string firstname = NSUserDefaults.StandardUserDefaults.StringForKey("firstNameKey");
+			string firstname = settings.StringForKey("firstNameKey");
 			string lastname = NSUserDefaults.StandardUserDefaults.StringForKey("lastNameKey");
 			string stamnummer = NSUserDefaults.StandardUserDefaults.StringForKey("stamNummerKey");
 			string groep = NSUserDefaults.StandardUserDefaults.StringForKey("chiroGroepKey");
@@ -122,16 +124,16 @@ namespace OpBivak.ios
 				message += stamnummer + " - ";
 			}
 			if (!string.IsNullOrWhiteSpace(groep)){
-				message += groep + " ";
+				message += " " + groep;
 			}
 			if (!string.IsNullOrWhiteSpace(gemeente) && string.IsNullOrWhiteSpace(groep) && string.IsNullOrWhiteSpace(stamnummer)){
-				message += "uit " + gemeente + " ";
+				message += " uit " + gemeente;
 			}else if (!string.IsNullOrWhiteSpace(gemeente) && string.IsNullOrWhiteSpace(groep)){
-				message += gemeente + " ";
+				message += " " + gemeente;
 			}else if (!string.IsNullOrWhiteSpace(gemeente)){
-				message += "(" + gemeente + ") ";
+				message += " (" + gemeente + ")";
 			}
-			message += "en ik belde de bivakpermanentie";
+			message += " en ik belde de bivakpermanentie";
 
 
 			//send the message
