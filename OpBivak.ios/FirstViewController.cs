@@ -76,7 +76,7 @@ namespace OpBivak.ios
 		}
 		partial void btnCallKipdorp_TouchUpInside (UIButton sender){
 			//set string for call
-			string phone = "+32476588722";
+			string phone = "+3232310795";
 			bool called;
 			var urlToSend = new NSUrl ("telprompt://" + phone);
 			if (UIApplication.SharedApplication.CanOpenUrl(urlToSend)){
@@ -93,7 +93,7 @@ namespace OpBivak.ios
 
 			}
 			// set recipient for message.
-			string[] recipient = new string[1] {"+32476588722"};
+			string[] recipient = new string[1] {"+32478787988"};
 
 			//get name etc from settings
 			var settings = NSUserDefaults.StandardUserDefaults;
